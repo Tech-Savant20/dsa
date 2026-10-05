@@ -19,10 +19,11 @@ public class MaxSubarraySumPrefix {
         int summax = Integer.MIN_VALUE;
         for(int i=0; i<arr.length; i++){
             for(int j=i; j<arr.length; j++){
-                int sumcurr = prefixarr[j] - (i == 0 ? 0 : prefixarr[i - 1]);
+                int sumcurr = i==0? prefixarr[j] : prefixarr[j] - prefixarr[i - 1];
                 summax = Math.max(summax, sumcurr);
             }
         }
         System.out.println(summax);
     }
 }
+
