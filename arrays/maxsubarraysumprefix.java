@@ -1,7 +1,7 @@
-package arrays;
+
 import java.util.*;
 
-public class MaxSubarraySumPrefix {
+public class maxsubarraysumprefix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr[] = {2,4,5,6,7,8};
